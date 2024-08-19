@@ -1,5 +1,3 @@
-# PowerSchool Email Notification Script
-
 ## Overview
 
 This Python script sends an email notification about the PowerSchool connection status and logs the process. It initializes an email instance with specified parameters and sends the email. It also logs the outcome (success or failure) to a log file and records this information in a SQL database.
