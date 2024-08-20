@@ -4,6 +4,7 @@ import logging
 from email.message import EmailMessage
 import os
 import mimetypes
+from .sql_query_module import *
 
 
 
@@ -68,6 +69,13 @@ class EMAIL:
             except Exception as e:
                 logging.error(f'Unable to send emails due to error {e}')
 
+
+
+
+
+
+
+    
 
 
 

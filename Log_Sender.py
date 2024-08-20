@@ -2,6 +2,7 @@ from config import EMAIL_PASS
 import logging
 from modules.logging_metadata import *
 from modules.email_sends import *
+from modules.ps_checks import *
 
 logger = JobLogger(process_name='PowerSchool Email Notification', 
                    job_name='PowerSchool Email Notification', 
@@ -18,24 +19,22 @@ email_one = EMAIL(
     EMAIL_PASS=EMAIL_PASS,
     from_email='2015samtaylor@gmail.com',
     to_email=['2015samtaylor@gmail.com', 'samuel.taylor@greendot.org'],
-    subject='PowerSchool Email Notification',
-    content_string='Email Notifying About PowerSchool Connection Status is....',
-    attachment_one_path=r'C:\Users\samuel.taylor\Desktop\Python_Scripts\CIVICS_Illuminate_to_PS\Civics_Scores.log',
-    attachment_two_path=r'C:\Users\samuel.taylor\Desktop\Python_Scripts\Whetstone\Whetstone_Tracker_2.log'
+    subject='PowerSchool Email Notification Status',
+    content_string='Email Notifying About PowerSchool Connection Status is Failing',
+    attachment_one_path=r'powerschool_log_fails.csv', #file written out during did_PS_fail func
 )
     
-email_one.send()
 
-
-def main():
+#Test this
+def main(which_email_instance):
     try:
-        email_one.send()
-        logger.log_job('Success')
+        determination(which_email_instance)
         logging.info('Success')
+        logger.log_job('Success')
         logger.send_frame_to_SQL()
-    except:
+    except Exception as e:
+        logging.info(f'Process failed due to {e}')
         logger.log_job('Failure')
-        logging.info('Process failed')
         logger.send_frame_to_SQL()
 
-main()
+main(email_one)

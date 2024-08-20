@@ -1,0 +1,4 @@
+job_id,process_name,job_name,job_type,server_ip,success_failure,start_time,end_time,Duration_sec
+520,PowerSchool,PS Custom,SSIS,10.0.0.90,Success,2024-08-19 01:29:29.253,2024-08-19 01:36:00.963,391
+519,PowerSchool,PS Overflow,SSIS,10.0.0.90,Success,2024-08-19 01:19:31.980,2024-08-19 01:29:21.327,590
+518,PowerSchool,PS CA,SSIS,10.0.0.90,Success,2024-08-19 01:00:01.660,2024-08-19 01:19:07.960,1146

@@ -45,3 +45,52 @@
 19-Aug-24 12:12:38 - Succesfully sent message via GMAIL account 2015samtaylor@gmail.com
 19-Aug-24 12:12:39 - Success
 19-Aug-24 12:12:39 - Logs sent to process_log table on 89 server
+19-Aug-24 16:29:26 - 
+
+-------------PS_Email new instance log
+19-Aug-24 16:29:27 - Succesfully logged into GMAIL
+19-Aug-24 16:29:28 - Succesfully sent message via GMAIL account 2015samtaylor@gmail.com
+20-Aug-24 09:33:30 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:33:30 - Process failed
+20-Aug-24 09:34:26 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:34:26 - Process failed
+20-Aug-24 09:34:28 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:34:28 - Process failed
+20-Aug-24 09:34:55 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:34:55 - Process failed due to EMAIL.send() takes 1 positional argument but 2 were given
+20-Aug-24 09:35:33 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:35:34 - Succesfully logged into GMAIL
+20-Aug-24 09:35:35 - Succesfully sent message via GMAIL account 2015samtaylor@gmail.com
+20-Aug-24 09:35:35 - Success
+20-Aug-24 09:40:53 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:40:58 - Powerschool processes were a success
+20-Aug-24 09:40:58 - Success
+20-Aug-24 09:42:03 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:42:03 - Powerschool processes were a success
+20-Aug-24 09:42:03 - Success
+20-Aug-24 09:42:03 - Logs sent to process_log table on 89 server
+20-Aug-24 09:42:39 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:42:39 - Powerschool processes were a success. No need to send emai
+20-Aug-24 09:42:39 - Success
+20-Aug-24 09:44:19 - 
+
+-------------PS_Email new instance log
+20-Aug-24 09:44:19 - Powerschool processes were a success. No need to send email
+20-Aug-24 09:44:19 - Success
+20-Aug-24 09:44:19 - Logs sent to process_log table on 89 server
